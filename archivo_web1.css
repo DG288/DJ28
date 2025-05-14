@@ -2,9 +2,21 @@
 
 
 }
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
 .section{
+    text-align: center;
     
 }
 .footer{
+    text-align: center;
     
+}
+body{
+    background-color: grey;
 }
