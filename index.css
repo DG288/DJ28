@@ -1,0 +1,50 @@
+.header{
+background-color: rgba(0, 0, 0, 0.87);/*Con esto le pongo color al fondo*/
+padding: 3px;/*con esto le pongo mas espacio al apartado*/
+margin: -8px;/*Con esto le meto mas margen y le quito marguen que sobre*/
+/*border: solid 19px black;/*Con esto le pongo un borde*/
+}
+h1{
+    color: rgb(255, 255, 255);/*Con esto le pongo color al texto*/
+    text-align: center;/*Con esto centro el texto*/
+}
+nav{
+    text-align: center;/*Con esto centro el texto*/
+    padding: 20px;/*Con esto le pongo mas espacio al apartado*/
+    background-color: black;/*Con esto le pongo color al fondo*/
+    margin: -3px;/*Con esto le meto mas margen y le quito marguen que sobre*/
+}
+nav a {
+    text-decoration: none;/*con esto le quito la raya del texto*/
+    color: purple;/*con esto le pongo color al texto*/
+    padding: 50px;/*con esto le pongo espacio entre los textos del nav */
+}
+.section{
+    margin:-8px;
+}
+.section a{
+    color:aliceblue
+}
+.footer{
+    text-align: center;/*Con esto centro el texto*/
+    position: fixed;/*Con esto fijo el footer*/
+    left: 0;/*pone el elemento pegado al lado izquierdo de la pantalla*/
+    bottom: 0;/*pone el elemento abajo del todo*/
+    width: 100%;/* hace que todo el elemento coja toda la parte inferior de la pantalla*/
+    padding: 5px 0;/*con esto le pongo mas espacio y le pongo 0 de espacio entre los lados*/
+    color: rgb(255, 255, 255);/*Con esto pinto el texto*/
+    background-color: rgb(0, 0, 0);/*con esto le pongo color al fondo del footer*/
+}
+body{
+    background-color: grey;/*Con esto le pongo color de fondo*/
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bg-video{
+    width: 100%;
+}
+.container{
+}
