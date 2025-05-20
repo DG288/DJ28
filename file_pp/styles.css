@@ -16,7 +16,6 @@ nav{
 }
 nav a {
     text-decoration: none;/*con esto le quito la raya del texto*/
-    color: purple;/*con esto le pongo color al texto*/
     padding: 50px;/*con esto le pongo espacio entre los textos del nav */
 }
 .section{
@@ -43,5 +42,28 @@ body{
 #bg-video{
     width: 100%;/*con esto le pongo el ancho al video*/
 }
-.container{
+@keyframes cambiarcolor{/*con esto le meto una animacion al texto*/
+    0%{ color:rgb(236, 37, 37);}
+    50%{ color:rgb(139, 28, 28);}
+    100%{ color:rgb(216, 44, 44);}
 }
+h1{
+    animation: cambiarcolor 3s infinite;
+}
+@keyframes cambiarcolor2{/*con esto le meto una animacion al texto*/
+    0% {color:cyan;}
+    50% {color:rgb(0, 140, 255);}
+    100% {color:aqua}
+}
+.footer{
+    animation: cambiarcolor2 3s infinite;
+}
+@keyframes cambiarcolor3{/*con esto le meto una animacion al texto*/
+    0% {color:blueviolet}
+    50% {color: rgb(86, 16, 151);}
+    100% {color: rgb(133, 2, 0);}
+}
+nav a{
+    animation: cambiarcolor3 3s infinite;
+}
+
