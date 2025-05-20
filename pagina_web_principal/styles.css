@@ -20,10 +20,7 @@ nav a {
     padding: 50px;/*con esto le pongo espacio entre los textos del nav */
 }
 .section{
-    margin:-8px;
-}
-.section a{
-    color:aliceblue
+    margin:-8px;/*Con esto le meto mas margen y le quito marguen que sobre*/
 }
 .footer{
     text-align: center;/*Con esto centro el texto*/
@@ -37,15 +34,14 @@ nav a {
 }
 body{
     background-color: grey;/*Con esto le pongo color de fondo*/
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+    margin: 0;/*con esto le quito el margen que puede quedar*/
+    padding: 0;/*con esto le quito el padding que puede quedar*/
+    width: 100vw; /*con esto dejo establecido el ancho de la pagina*/
+    height: 100vh;/*con esto dejo establecido el alto de la pagina*/
     overflow-x: hidden; /* Elimina el desplazamiento horizontal */
 }
-
 #bg-video{
-    width: 100%;
+    width: 100%;/*con esto le pongo el ancho al video*/
 }
 .container{
 }
