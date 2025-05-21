@@ -4,23 +4,69 @@ padding: 3px;/*con esto le pongo mas espacio al apartado*/
 margin: -8px;/*Con esto le meto mas margen y le quito marguen que sobre*/
 /*border: solid 19px black;/*Con esto le pongo un borde*/
 }
+
 h1{
     color: rgb(255, 255, 255);/*Con esto le pongo color al texto*/
     text-align: center;/*Con esto centro el texto*/
 }
+
 nav{
     text-align: center;/*Con esto centro el texto*/
-    padding: 20px;/*Con esto le pongo mas espacio al apartado*/
+    padding: 25px;/*Con esto le pongo mas espacio al apartado*/
     background-color: black;/*Con esto le pongo color al fondo*/
-    margin: -3px;/*Con esto le meto mas margen y le quito marguen que sobre*/
+    display: inline-block; /* Permite aplicar margin sin problemas */
+    width: 100%; /* Ancho del contenedor */
 }
-nav a {
+nav a{
     text-decoration: none;/*con esto le quito la raya del texto*/
-    padding: 50px;/*con esto le pongo espacio entre los textos del nav */
+    padding: 10px;/*con esto le pongo espacio entre los textos del nav */
+    margin-right: 50px;
+    position: relative;
+    border: 2px solid transparent;
+    animation: borderAnimation 2s infinite;
+    border-radius: 8px;
 }
+
+nav a:hover{
+
+    box-shadow: 0 0 25px 5px rgba(0, 255, 255, 0.7), 0 0 25px 5px rgba(255, 0, 255, 0.7), 0 0 25px 5px rgb(96, 0, 160, 0.5);
+    animation: hoverAnimation 1s ease-in-out infinite alternate;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(74, 0, 172);
+        box-shadow: 0 0 5px rgb(74, 0, 172);
+    }
+    50% {
+        border-color: transparent;
+        box-shadow: 0 0 5px transparent;
+    }
+    100% {
+        border-color: rgb(74, 0, 172);
+        box-shadow: 0 0 5px rgb(74, 0, 172);
+    }
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: scale(1);
+        border-color: rgb(74, 0, 172);
+        box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 25px 5px rgb(13, 0, 31), 0 0 35px 5px rgb(74, 0, 172);
+    }
+    50% {
+        box-shadow: 0 0 5px transparent;
+        box-shadow: 0 0 10px transparent;
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 .section{
     margin:-8px;/*Con esto le meto mas margen y le quito marguen que sobre*/
 }
+
 .footer{
     text-align: center;/*Con esto centro el texto*/
     position: fixed;/*Con esto fijo el footer*/
@@ -30,7 +76,11 @@ nav a {
     padding: 5px 0;/*con esto le pongo mas espacio y le pongo 0 de espacio entre los lados*/
     color: rgb(255, 255, 255);/*Con esto pinto el texto*/
     background-color: rgb(0, 0, 0);/*con esto le pongo color al fondo del footer*/
+    animation: cambiarcolor2 4s infinite;
+    font-weight: bold; /* Hace la letra más gruesa */
+    font-style: italic; /* Hace la fuente en cursiva */
 }
+
 body{
     background-color: grey;/*Con esto le pongo color de fondo*/
     margin: 0;/*con esto le quito el margen que puede quedar*/
@@ -39,31 +89,33 @@ body{
     height: 100vh;/*con esto dejo establecido el alto de la pagina*/
     overflow-x: hidden; /* Elimina el desplazamiento horizontal */
 }
+
 #bg-video{
     width: 100%;/*con esto le pongo el ancho al video*/
 }
 @keyframes cambiarcolor{/*con esto le meto una animacion al texto*/
     0%{ color:rgb(236, 37, 37);}
-    50%{ color:rgb(139, 28, 28);}
+    50%{ color:rgb(5, 234, 255);}
     100%{ color:rgb(216, 44, 44);}
 }
+
 h1{
-    animation: cambiarcolor 3s infinite;
+    animation: cambiarcolor 6s infinite;
 }
+
 @keyframes cambiarcolor2{/*con esto le meto una animacion al texto*/
     0% {color:cyan;}
     50% {color:rgb(0, 140, 255);}
     100% {color:aqua}
 }
-.footer{
-    animation: cambiarcolor2 3s infinite;
-}
+
+
+
 @keyframes cambiarcolor3{/*con esto le meto una animacion al texto*/
-    0% {color:blueviolet}
+    0% {color:rgb(159, 57, 255)}
     50% {color: rgb(86, 16, 151);}
-    100% {color: rgb(133, 2, 0);}
+    100% {color: rgb(230, 2, 255);}
 }
-nav a{
-    animation: cambiarcolor3 3s infinite;
-}
+
+
 
