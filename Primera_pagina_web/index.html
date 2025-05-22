@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador con Múltiples Enlaces</title>
+</head>
+<body>
+  <style>
+    /* Estilos para centrar el botón en la pantalla */
+    .centrado {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+<style>
+  /* Estilos para centrar el formulario y los resultados en la pantalla */
+  .centrado, #resultadosBusqueda {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; /* Ajusta esto según prefieras */
+      text-align: center;
+  }
+  
+  /* Estilos para el formulario de búsqueda */
+  .centrado {
+      margin-top: -100px; /* Ajusta esto para posicionar el formulario más arriba */
+  }
+  
+  /* Estilos para los resultados de búsqueda */
+  #resultadosBusqueda {
+      margin-top: 50px; /* Ajusta esto para posicionar los resultados más abajo */
+  }
+</style>
+<style>
+  /* Estilos para añadir una imagen de fondo a toda la página */
+  body {
+      background-image: url('https://i.pinimg.com/originals/ca/08/9d/ca089d493e9eb149c95286878e464d9c.jpg');
+      background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+      background-position: center; /* Centra la imagen en la página */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-attachment: fixed; /* La imagen de fondo es fija en relación con el área de visualización */
+  }
+</style>
+
+</head>
+<body>
+
+
+<div class="centrado">
+<form id="formularioBusqueda" onsubmit="buscar(event)">
+  <input type="text" id="terminoBusqueda" placeholder="Buscar...">
+  <button type="submit">Buscar</button>
+</form>
+</div>
+<div id="resultadosBusqueda"></div>
+
+<script>
+var enlaces = {};
+
+for (let i = 1; i <= 24; i++) {
+    enlaces['darling in the fraxx cap ' + i] = 'https://www3.animeflv.net/ver/darling-in-the-franxx-' + i;
+}
+
+/* // Objeto para mapear términos de búsqueda a URLs
+var enlaces = {
+  'darling in the fraxx cap 1': 'https://www3.animeflv.net/ver/darling-in-the-franxx-1',
+  'darling in the fraxx cap 2': 'https://www3.animeflv.net/ver/darling-in-the-franxx-2',
+  'darling in the fraxx cap 3': 'https://www3.animeflv.net/ver/darling-in-the-franxx-3',
+  'darling in the fraxx cap 4': 'https://www3.animeflv.net/ver/darling-in-the-franxx-4',
+  'darling in the fraxx cap 5': 'https://www3.animeflv.net/ver/darling-in-the-franxx-5',
+  'darling in the fraxx cap 6': 'https://www3.animeflv.net/ver/darling-in-the-franxx-6',
+  'darling in the fraxx cap 7': 'https://www3.animeflv.net/ver/darling-in-the-franxx-7',
+  'darling in the fraxx cap 8': 'https://www3.animeflv.net/ver/darling-in-the-franxx-8',
+  'darling in the fraxx cap 9': 'https://www3.animeflv.net/ver/darling-in-the-franxx-9',
+  'darling in the fraxx cap 10': 'https://www3.animeflv.net/ver/darling-in-the-franxx-10',
+  'darling in the fraxx cap 11': 'https://www3.animeflv.net/ver/darling-in-the-franxx-11',
+  'darling in the fraxx cap 12': 'https://www3.animeflv.net/ver/darling-in-the-franxx-12',
+  'darling in the fraxx cap 13': 'https://www3.animeflv.net/ver/darling-in-the-franxx-13',
+  'darling in the fraxx cap 14': 'https://www3.animeflv.net/ver/darling-in-the-franxx-14',
+  'darling in the fraxx cap 15': 'https://www3.animeflv.net/ver/darling-in-the-franxx-15',
+  'darling in the fraxx cap 16': 'https://www3.animeflv.net/ver/darling-in-the-franxx-16',
+  'darling in the fraxx cap 17': 'https://www3.animeflv.net/ver/darling-in-the-franxx-17',
+  'darling in the fraxx cap 18': 'https://www3.animeflv.net/ver/darling-in-the-franxx-18',
+  'darling in the fraxx cap 19': 'https://www3.animeflv.net/ver/darling-in-the-franxx-19',
+  'darling in the fraxx cap 20': 'https://www3.animeflv.net/ver/darling-in-the-franxx-20',
+  'darling in the fraxx cap 21': 'https://www3.animeflv.net/ver/darling-in-the-franxx-21',
+  'darling in the fraxx cap 22': 'https://www3.animeflv.net/ver/darling-in-the-franxx-22',
+  'darling in the fraxx cap 23': 'https://www3.animeflv.net/ver/darling-in-the-franxx-23',
+  'darling in the fraxx cap 24': 'https://www3.animeflv.net/ver/darling-in-the-franxx-24',
+  // Puedes agregar más términos y enlaces aquí
+}; */
+
+// Función para buscar y crear enlaces basados en el término de búsqueda
+function buscar(e) {
+  e.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+  var termino = document.getElementById('terminoBusqueda').value.toLowerCase();
+  
+  // Comprobar si el término de búsqueda está en el objeto de enlaces
+  if(enlaces[termino]) {
+    document.getElementById('resultadosBusqueda').innerHTML = '<p>Resultado encontrado: <a href="' + enlaces[termino] + '">' + termino + '</a></p>';
+  } else {
+    document.getElementById('resultadosBusqueda').innerHTML = '<p>No se encontraron resultados para: ' + termino + '</p>';
+  }
+}
+</script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_V7cJB8n_Q8?si=9SjQOi8XAewfdXyB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
