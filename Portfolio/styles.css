@@ -1,6 +1,6 @@
 .header{
 background-color: rgba(0, 0, 0, 0.87);/*Con esto le pongo color al fondo*/
-padding: 3px;/*con esto le pongo mas espacio al apartado*/
+padding: 3px;/*Con esto le pongo mas espacio al apartado*/
 margin: -8px;/*Con esto le meto mas margen y le quito marguen que sobre*/
 /*border: solid 19px black;/*Con esto le pongo un borde*/
 }
@@ -8,32 +8,32 @@ margin: -8px;/*Con esto le meto mas margen y le quito marguen que sobre*/
 h1{
     color: rgb(255, 255, 255);/*Con esto le pongo color al texto*/
     text-align: center;/*Con esto centro el texto*/
-    animation: cambiarcolor 5s infinite;/*con esto le meto una animacion a todos los h1 del archivo*/
+    animation: cambiarcolor 5s infinite;/*Con esto le meto una animacion a todos los h1 del archivo*/
 }
 
 nav{
     text-align: center;/*Con esto centro el texto*/
     padding: 25px;/*Con esto le pongo mas espacio al apartado*/
     background-color: black;/*Con esto le pongo color al fondo*/
-    display: inline-block;/*Permite aplicar margin sin problemas */
-    width: 100%; /*Ancho del contenedor */
+    display: inline-block;/*Permite aplicar margin sin problemas*/
+    width: 100%; /*Ancho del contenedor*/
 }
 nav a{
-    text-decoration: none;/*con esto le quito la raya del texto*/
-    padding: 10px;/*con esto le pongo espacio entre los textos del nav */
-    margin-right: 50px;/*con esto le pongo espacio entre los a href del nav*/
-    border: 1px solid transparent;/*hace que haya un borde tranparente*/
-    animation: borderAnimation 3s infinite;/*con esto le meto animacion al nav*/
-    border-radius: 8px;/*con esto hago que el borde del cuadrado del nav*/
+    text-decoration: none;/*Con esto le quito la raya del texto*/
+    padding: 10px;/*Con esto le pongo espacio entre los textos del nav*/
+    margin-right: 50px;/*Con esto le pongo espacio entre los a href del nav*/
+    border: 1px solid transparent;/*Hace que haya un borde tranparente*/
+    animation: borderAnimation 3s infinite;/*Con esto le meto animacion al nav*/
+    border-radius: 8px;/*Con esto hago que el borde del cuadrado del nav*/
 }
 
 nav a:hover{
 
-    box-shadow: 0 0 20px 5px rgb(0, 215, 215), 0 0 20px 5px rgb(0, 152, 152), 0 0 20px 5px rgb(0, 56, 56);/* con esto al hover le meto una box-shadow */
-    animation: hoverAnimation 2s ease-in-out infinite alternate;/*con esto le meto una animacion al haver del nav*/
+    box-shadow: 0 0 20px 5px rgb(0, 215, 215), 0 0 20px 5px rgb(0, 152, 152), 0 0 20px 5px rgb(0, 56, 56);/*Con esto al hover le meto una box-shadow*/
+    animation: hoverAnimation 2s ease-in-out infinite alternate;/*Con esto le meto una animacion al haver del nav*/
 }
 
-@keyframes borderAnimation {/*esta es la animacion del borde*/
+@keyframes borderAnimation {/*Esta es la animacion del borde*/
     0% {
         border-color: rgb(13, 0, 255);
         box-shadow: 0 0 5px rgb(13, 0, 255);
@@ -48,7 +48,7 @@ nav a:hover{
     }
 }
 
-@keyframes hoverAnimation {/* esta es la animacion el hover del nav*/
+@keyframes hoverAnimation {/*Esta es la animacion el hover del nav*/
     0% {
         transform: scale(1);
         border-color: rgb(0, 255, 255);
@@ -70,37 +70,37 @@ nav a:hover{
 .footer{
     text-align: center;/*Con esto centro el texto*/
     position: fixed;/*Con esto fijo el footer*/
-    left: 0;/*pone el elemento pegado al lado izquierdo de la pantalla*/
-    bottom: 0;/*pone el elemento abajo del todo*/
-    width: 100%;/* hace que todo el elemento coja toda la parte inferior de la pantalla*/
-    padding: 13px 0;/*con esto le pongo mas espacio y le pongo 0 de espacio entre los lados*/
+    left: 0;/*Pone el elemento pegado al lado izquierdo de la pantalla*/
+    bottom: 0;/*Pone el elemento abajo del todo*/
+    width: 100%;/*Hace que todo el elemento coja toda la parte inferior de la pantalla*/
+    padding: 13px 0;/*Con esto le pongo mas espacio y le pongo 0 de espacio entre los lados*/
     color: rgb(255, 255, 255);/*Con esto pinto el texto*/
-    background-color: rgb(0, 0, 0);/*con esto le pongo color al fondo del footer*/
+    background-color: rgb(0, 0, 0);/*Con esto le pongo color al fondo del footer*/
     animation: cambiarcolor2 4s infinite;
-    font-weight: bold; /* Hace la letra más gruesa */
-    font-style: italic; /* Hace la fuente en cursiva */
+    font-weight: bold;/*Hace la letra más gruesa*/
+    font-style: italic;/*Hace la fuente en cursiva*/
 }
 
 body{
     background-color: grey;/*Con esto le pongo color de fondo*/
-    margin: 0;/*con esto le quito el margen que puede quedar*/
-    padding: 0;/*con esto le quito el padding que puede quedar*/
-    width: 100vw; /*con esto dejo establecido el ancho de la pagina*/
-    height: 100vh;/*con esto dejo establecido el alto de la pagina*/
-    overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+    margin: 0;/*Con esto le quito el margen que puede quedar*/
+    padding: 0;/*Con esto le quito el padding que puede quedar*/
+    width: 100vw;/*Con esto dejo establecido el ancho de la pagina*/
+    height: 100vh;/*Con esto dejo establecido el alto de la pagina*/
+    overflow-x: hidden;/*Elimina el desplazamiento horizontal*/
 }
 
 #bg-video{
-    width: 100%;/*con esto le pongo el ancho al video*/
+    width: 100%;/*Con esto le pongo el ancho al video*/
 }
-@keyframes cambiarcolor{/*con esto le meto una animacion al texto*/
+@keyframes cambiarcolor{/*Con esto le meto una animacion al texto*/
     0%{ color:rgb(14, 207, 228);}
     50%{ color:rgb(9, 5, 255);}
     100%{ color:rgb(14, 207, 228);}
 }
 
 
-@keyframes cambiarcolor2{/*con esto le meto una animacion al texto*/
+@keyframes cambiarcolor2{/*Con esto le meto una animacion al texto*/
     0% {color:rgb(47, 0, 255);}
     50% {color:rgb(0, 140, 255);}
     100% {color:rgb(47, 0, 255);}
@@ -108,7 +108,7 @@ body{
 
 
 
-@keyframes cambiarcolor3{/*con esto le meto una animacion al texto*/
+@keyframes cambiarcolor3{/*Con esto le meto una animacion al texto*/
     0% {color:rgb(159, 57, 255)}
     50% {color: rgb(86, 16, 151);}
     100% {color: rgb(230, 2, 255);}
