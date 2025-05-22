@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: rgb(101, 234, 249);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav {
+    background-color: #444;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 160px); /* Ajusta la altura según el tamaño de la cabecera y el pie de página */
+    width: 100%;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(142, 147, 148);
+    height: 100%;
+    color: white;
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto del elemento */
+}
+
+.imagen {
+    width: 70%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/fotos-premium/anciano-esta-tomando-mano-robot-humanoide_14117-1069344.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto del elemento */
+}
+
+.footer {
+    background-color: #333;
+    color: rgb(101, 234, 249);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: rgb(101, 234, 249);
+    padding: 25px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-img {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 130px;
+    height: auto;
+}
+
+.header h1 {
+    margin: 1;
+}
