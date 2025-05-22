@@ -8,51 +8,51 @@ margin: -8px;/*Con esto le meto mas margen y le quito marguen que sobre*/
 h1{
     color: rgb(255, 255, 255);/*Con esto le pongo color al texto*/
     text-align: center;/*Con esto centro el texto*/
+    animation: cambiarcolor 5s infinite;/*con esto le meto una animacion a todos los h1 del archivo*/
 }
 
 nav{
     text-align: center;/*Con esto centro el texto*/
     padding: 25px;/*Con esto le pongo mas espacio al apartado*/
     background-color: black;/*Con esto le pongo color al fondo*/
-    display: inline-block; /* Permite aplicar margin sin problemas */
-    width: 100%; /* Ancho del contenedor */
+    display: inline-block;/*Permite aplicar margin sin problemas */
+    width: 100%; /*Ancho del contenedor */
 }
 nav a{
     text-decoration: none;/*con esto le quito la raya del texto*/
     padding: 10px;/*con esto le pongo espacio entre los textos del nav */
-    margin-right: 50px;
-    position: relative;
-    border: 2px solid transparent;
-    animation: borderAnimation 2s infinite;
-    border-radius: 8px;
+    margin-right: 50px;/*con esto le pongo espacio entre los a href del nav*/
+    border: 1px solid transparent;/*hace que haya un borde tranparente*/
+    animation: borderAnimation 3s infinite;/*con esto le meto animacion al nav*/
+    border-radius: 8px;/*con esto hago que el borde del cuadrado del nav*/
 }
 
 nav a:hover{
 
-    box-shadow: 0 0 25px 5px rgba(0, 255, 255, 0.7), 0 0 25px 5px rgba(255, 0, 255, 0.7), 0 0 25px 5px rgb(96, 0, 160, 0.5);
-    animation: hoverAnimation 1s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px 5px rgb(0, 215, 215), 0 0 20px 5px rgb(0, 152, 152), 0 0 20px 5px rgb(0, 56, 56);/* con esto al hover le meto una box-shadow */
+    animation: hoverAnimation 2s ease-in-out infinite alternate;/*con esto le meto una animacion al haver del nav*/
 }
 
-@keyframes borderAnimation {
+@keyframes borderAnimation {/*esta es la animacion del borde*/
     0% {
-        border-color: rgb(74, 0, 172);
-        box-shadow: 0 0 5px rgb(74, 0, 172);
+        border-color: rgb(13, 0, 255);
+        box-shadow: 0 0 5px rgb(13, 0, 255);
     }
     50% {
         border-color: transparent;
         box-shadow: 0 0 5px transparent;
     }
     100% {
-        border-color: rgb(74, 0, 172);
-        box-shadow: 0 0 5px rgb(74, 0, 172);
+        border-color: rgb(13, 0, 255);
+        box-shadow: 0 0 5px rgb(13, 0, 255);
     }
 }
 
-@keyframes hoverAnimation {
+@keyframes hoverAnimation {/* esta es la animacion el hover del nav*/
     0% {
         transform: scale(1);
-        border-color: rgb(74, 0, 172);
-        box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 25px 5px rgb(13, 0, 31), 0 0 35px 5px rgb(74, 0, 172);
+        border-color: rgb(0, 255, 255);
+        box-shadow: 0 0 20px rgb(0, 215, 215), 0 0 20px 5px rgb(0, 152, 152), 0 0 20px 5px rgb(0, 56, 56);
     }
     50% {
         box-shadow: 0 0 5px transparent;
@@ -73,7 +73,7 @@ nav a:hover{
     left: 0;/*pone el elemento pegado al lado izquierdo de la pantalla*/
     bottom: 0;/*pone el elemento abajo del todo*/
     width: 100%;/* hace que todo el elemento coja toda la parte inferior de la pantalla*/
-    padding: 5px 0;/*con esto le pongo mas espacio y le pongo 0 de espacio entre los lados*/
+    padding: 13px 0;/*con esto le pongo mas espacio y le pongo 0 de espacio entre los lados*/
     color: rgb(255, 255, 255);/*Con esto pinto el texto*/
     background-color: rgb(0, 0, 0);/*con esto le pongo color al fondo del footer*/
     animation: cambiarcolor2 4s infinite;
@@ -94,19 +94,16 @@ body{
     width: 100%;/*con esto le pongo el ancho al video*/
 }
 @keyframes cambiarcolor{/*con esto le meto una animacion al texto*/
-    0%{ color:rgb(236, 37, 37);}
-    50%{ color:rgb(5, 234, 255);}
-    100%{ color:rgb(216, 44, 44);}
+    0%{ color:rgb(14, 207, 228);}
+    50%{ color:rgb(9, 5, 255);}
+    100%{ color:rgb(14, 207, 228);}
 }
 
-h1{
-    animation: cambiarcolor 6s infinite;
-}
 
 @keyframes cambiarcolor2{/*con esto le meto una animacion al texto*/
-    0% {color:cyan;}
+    0% {color:rgb(47, 0, 255);}
     50% {color:rgb(0, 140, 255);}
-    100% {color:aqua}
+    100% {color:rgb(47, 0, 255);}
 }
 
 
