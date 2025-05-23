@@ -8,9 +8,6 @@ header{
     padding: 5px;
 }
 
-form{
-    
-}
 .container1{
     background-color: white;
     width: 600px;
@@ -22,6 +19,7 @@ form{
     box-shadow: 2px 2px 10px white;
     
 }
+
 .container2{
     display: block;
     color: white;
@@ -32,6 +30,7 @@ form{
     box-shadow: 2px 2px 10px black;
     padding: 20px;
 }
+
 input{
     font-size: 20px;
     width: 100%;
@@ -43,22 +42,27 @@ p{
 color: white;
 text-align: center;
 }
+
 footer{
     text-align: center;
     padding: 20px;
 }
+
 .p1{
     color: black;
 }
+
 footer a{
     text-decoration: none;
     
 }
+
 @keyframes cambiarcolor1 {
     0%{ color:rgb(14, 207, 228);}
     50%{ color:rgb(9, 5, 255);}
     100%{ color:rgb(14, 207, 228);}    
 }
+
 footer a {
     animation: cambiarcolor1 2s infinite;
 }
