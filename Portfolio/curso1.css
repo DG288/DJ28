@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+
+}
+.header{
+    text-align: center;
+    width: 100%;
+    background-color:grey;
+    padding: 10px;
+    border-radius: 100px;
+}
+.d1{
+    text-decoration: none;
+    position: absolute;
+    left: 300px;
+    bottom: 400px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    animation: cambiarcolor1 5s infinite;
+    padding: 15px;
+}
+
+@keyframes cambiarcolor1{
+    0%{
+        border-color: rgb(13, 0, 255);
+        box-shadow: 0 0 5px rgb(13, 0, 255);}
+    50%{
+        border-color: transparent;
+        box-shadow: 0 0 5px transparent;}
+    
+    100%{
+        border-color: rgb(13, 0, 255);
+        box-shadow: 0 0 5px rgb(13, 0, 255);}
+    
+    
+}
