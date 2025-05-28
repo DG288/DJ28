@@ -274,4 +274,17 @@ h1{
         height: 40vh;
     }
 }
+
+@media (max-width:348px){
+    .container2{
+        height: 28vh;
+    }
+}
+ 
+
+@media (max-width:290px){
+    .container2{
+        height: 23vh;
+    }
+}
  
