@@ -80,6 +80,10 @@ nav a:hover{
     font-weight: bold;/*Hace la letra más gruesa*/
     font-style: italic;/*Hace la fuente en cursiva*/
 }
+.footer a{
+    text-decoration: none;
+    animation: cambiarcolor2 4s infinite;/*Con esto le meto una animacion al texto*/
+}
 
 body{
     background-color: grey;/*Con esto le pongo color de fondo*/

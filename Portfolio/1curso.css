@@ -20,7 +20,6 @@ h1{
 }
 
 .d1{
-    border: 0.13vw solid transparent;
     animation: colorb1 3s infinite;
     border-radius: 2.04vw;
     background-color: black;
@@ -32,8 +31,7 @@ h1{
     justify-content: center;
     align-items: center;
     margin-left: 3.5vw;
-    
-
+    margin-top: 1.05vw;
 }
 .d1 a{
     text-decoration: none;
@@ -44,8 +42,6 @@ h1{
 
 .d2{
     display: flex;
-    border-radius: 6.94vw;
-    border: 0.13vw solid transparent;
     border-radius: 2.04vw;
     background-color: black;
     border: 0.30vw solid rgb(13, 0, 255);
@@ -55,7 +51,8 @@ h1{
     align-items: center;
     width: 15.0vw;
     height: 6.0vw;
-    margin: ;
+    margin-left: 3.1vw;
+    margin-top: 1.05vw;
 }
 .d2 a{
     text-decoration: none;
@@ -65,16 +62,17 @@ h1{
 }
 
 .d3{
-    border-radius: 6.94vw;
-    border: 0.13vw solid transparent;
-    border-radius: 1.04vw;
+    border-radius: 2.04vw;
     background-color: black;
-    border: 0.30vw solid rgb(13, 0, 255);
+    border: 0.20vw solid rgb(13, 0, 255);
     animation: colorb1 3s infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 1.05vw;
+    width: 15.0vw;
+    height: 6.0vw;
+    margin-left: 3.30vw;
 }
 .d3 a{
     text-decoration: none;
@@ -84,16 +82,17 @@ h1{
 }
 
 .d4{
-    position: absolute;
-    border-radius: 6.94vw;
-    border: 0.13vw solid transparent;
-    padding: 6.48vh;
-    border-radius: 1.04vw;
+    display: flex;
+    border: 0.30vw solid transparent;
+    border-radius: 2.04vw;
     background-color: black;
-    bottom: 4.17vh;
-    right: 2.08vw;
-    border: 0.21vw solid rgb(13, 0, 255);
     animation: colorb1 3s infinite;
+    justify-content: center;
+    align-items: center;
+    height: 6.0vw;
+    width: 15.0vw;
+    margin-left: 3.5vw;
+    margin-top: 1.05vw;
 }
 .d4 a{
     text-decoration: none;
@@ -103,16 +102,17 @@ h1{
 }
 
 .d5{
-    position: absolute;
-    border-radius: 6.94vw;
-    border: 0.13vw solid transparent;
-    padding: 6.48vh;
-    border-radius: 1.04vw;
+    display: flex;
+    border-radius: 2.04vw;
     background-color: black;
-    right: 17.19vw;
-    bottom: 13.89vh;
     border: 0.21vw solid rgb(13, 0, 255);
     animation: colorb1 3s infinite;
+    justify-content: center;
+    width: 15.0vw;
+    height: 6.0vw;
+    align-items: center;
+    margin-left: 15vw;
+    margin-top: 1.05vw;
 }
 .d5 a{
     text-decoration: none;
@@ -158,7 +158,7 @@ h1{
 .container2{
     background-color: white;
     width: 45vw;
-    height: 40vh;
+    height: 44vh;
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -166,8 +166,8 @@ h1{
     box-shadow: 0.13vw 0.13vw 1.0vw white;
     margin-bottom: 5.04vw;
     flex-direction: column;
-    
-    ;
+    font-size:medium;
+    font-style: italic;
 }
 
 @keyframes colorb1{
@@ -184,5 +184,33 @@ h1{
 
 .row{
     display: flex;
-    
+}
+@media (max-width: 770px) {
+    .col-md-12{
+        width: 5.9vw;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: center;/*Con esto centro el texto*/
+    align-items: center;/*Con esto centro el texto verticalmente*/
+    position: fixed;/*Con esto fijo el footer*/
+    left: 0;/*Pone el elemento pegado al lado izquierdo de la pantalla*/
+    bottom: 0;/*Pone el elemento abajo del todo*/
+    width: 100%;/*Hace que todo el elemento coja toda la parte inferior de la pantalla*/
+    padding: 13px 0;/*Con esto le pongo mas espacio y le pongo 0 de espacio entre los lados*/
+    background-color: rgb(0, 0, 0);/*Con esto le pongo color al fondo del footer*/
+    font-weight: bold;/*Hace la letra más gruesa*/
+    font-style: italic;/*Hace la fuente en cursiva*/
+    margin-top: 1.05vw;
+}
+.footer a{
+    text-decoration: none;
+    animation: cambiarcolor2 4s infinite;
+}
+
+@keyframes cambiarcolor2{/*Con esto le meto una animacion al texto*/
+    0% {color:rgb(47, 0, 255);}
+    50% {color:rgb(0, 140, 255);}
+    100% {color:rgb(47, 0, 255);}
 }
