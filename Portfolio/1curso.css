@@ -257,6 +257,17 @@ h1{
         height: 9.0vw;
     }
     .container2{
-        height: 55vh;
+        height: 59vh;
+    }
+}
+@media (max-width:507px){
+    .container2{
+        height: 45vh;
+    }
+}
+
+@media (max-width:444px){
+    .container2{
+        height: 40vh;
     }
 }
