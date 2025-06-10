@@ -36,3 +36,24 @@ function Boton({ texto }) {
 
 // si el && lo cambio por ||= seria que si es falso lo cambia si es verdadero lo deja igual es como el && pero en falso y depues estaria el ??= que es si el valor el null o undefinined lo cambia si no lo deja igual
 
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+
