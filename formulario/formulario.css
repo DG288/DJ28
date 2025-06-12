@@ -54,15 +54,11 @@ footer{
 
 footer a{
     text-decoration: none;
-    
+    animation: cambiarcolor1 2s infinite;
 }
 
 @keyframes cambiarcolor1 {
     0%{ color:rgb(14, 207, 228);}
     50%{ color:rgb(9, 5, 255);}
     100%{ color:rgb(14, 207, 228);}    
-}
-
-footer a {
-    animation: cambiarcolor1 2s infinite;
 }
