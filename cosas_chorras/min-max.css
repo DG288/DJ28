@@ -1,0 +1,9 @@
+body{
+    background-color: white;
+}
+.section1{
+width:min(400px, 80%);
+}
+.section2{
+width:max(200px, 80%);
+} 
