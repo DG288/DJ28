@@ -65,6 +65,11 @@ fieldset{
   display: flex;
   flex-direction: column;
   gap: clamp(5px, 2vh, 10px); /* Espaciado responsivo */
+  input {
+  min-height: 2rem;
+  /* o height fija si hace falta */
+}
+
 
 }
 input{

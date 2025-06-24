@@ -16,38 +16,46 @@ function App() {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Formato básico de correo
   const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).{6,}$/; // Al menos 6 caracteres, 1 letra y 1 número
 
-const handleSubmit = (e) => {
-  
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
   let isValid = true;
 
-  if (!emailRegex.test(gmail)) {
-    setErrorGmail("Ingresa un correo válido");
-    isValid = false;
-  } else {
-    setErrorGmail("");
-  }
-
   if (!nombreRegex.test(nombre)) {
-    setErrorNombre("El nombre debe contener solo letras y espacios.");
+    alert("El nombre debe contener solo letras y espacios.");
     isValid = false;
   } else {
-    setErrorNombre("");
+    setErrorNombre(""); // ← importante
   }
 
-  if (!passwordRegex.test(contraseña)) {
-    setErrorContraseña("La contraseña debe tener al menos 6 caracteres, incluyendo una letra y un número.");
+
+  if (!emailRegex.test(gmail)) {
+    alert("Ingresa un correo válido");
     isValid = false;
   } else {
-    setErrorContraseña("");
+    setErrorGmail(""); // ← importante
+  }
+
+  
+  if (!passwordRegex.test(contraseña)) {
+    alert("La contraseña debe tener al menos 6 caracteres, incluyendo una letra y un número.");
+    isValid = false;
+  } else {
+    setErrorContraseña(""); // ← importante
   }
 
   if (isValid) {
     console.log({ nombre, gmail, contraseña });
-    alert("Formulario completado correctamente");
-    // Aquí puedes resetear el formulario o redirigir si necesitas
+    // alert("Formulario completado correctamente"); ← prueba a comentar esto
+    // Si aún así se rompe, prueba con un pequeño delay:
+    setTimeout(() => {
+      setNombre("");
+      setGmail("");
+      setContraseña("");
+    }, 100);
   }
 };
+
 
   return (
       <div className="container-fluid">
@@ -96,6 +104,6 @@ const handleSubmit = (e) => {
         </div>
     </div>
   );
-}
+};
 
 export default App;
